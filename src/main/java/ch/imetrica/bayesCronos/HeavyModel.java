@@ -1,5 +1,13 @@
 package ch.imetrica.bayesCronos;
+/*!
+Copyright (C) 2016 Christian D. Blakely
+This file is part of iMetrica, a free-software/open-source application
+for interactive graphical econometric analysis - http://imetricablog.com/
 
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the license for more details.
+*/
 public class HeavyModel
 {
 
