@@ -1,0 +1,13 @@
+ ERROR: Do not take BoxCox transform, y(    1)=  -35.527381    .
+ ERROR: Do not take BoxCox transform, y(    2)=  -36.324498    .
+ ERROR: Do not take BoxCox transform, y(    3)=  -33.098003    .
+ ERROR: Do not take BoxCox transform, y(    4)=  -32.501646    .
+ ERROR: Do not take BoxCox transform, y(    5)=  -27.450222    .
+ ERROR: Do not take BoxCox transform, y(    6)=  -28.756727    .
+ ERROR: Do not take BoxCox transform, y(    7)=  -29.496293    .
+ ERROR: Do not take BoxCox transform, y(    8)=  -31.847223    .
+ ERROR: Do not take BoxCox transform, y(    9)=  -36.601210    .
+ ERROR: Do not take BoxCox transform, y(   10)=  -38.171328    .
+ ERROR: Do not take BoxCox transform, y(   11)=  -36.797513    .
+ ERROR: Maximum number of errors printed.  More errors may exist, but
+        will not be specified.  The above values cannot be processed.

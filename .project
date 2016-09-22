@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>imetrica</name>
+	<comment>Project imetrica created by Buildship.</comment>
+	<projects>
+		<project>emd_util</project>
+		<project>heavy</project>
+		<project>I_MDFA</project>
+		<project>ms</project>
+		<project>REGmodelJava</project>
+		<project>sarimaModel</project>
+		<project>simSarima</project>
+		<project>SpectralDens</project>
+		<project>sv</project>
+		<project>zpcFilter</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.buildship.core.gradleprojectbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>

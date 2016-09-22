@@ -1,0 +1,585 @@
+  Reading input spec file from x13parameters.spc
+  Reading data from useless.dat
+
+ Transformation
+  No transformation
+
+ ARIMA Model
+  (0 1 1)(0 1 1)12
+
+ regARIMA Model Span
+  From  1976.Jan to 2000.Dec
+  Exact ARMA likelihood estimation
+  Max total ARMA iterations               1500
+  Convergence tolerance               1.00E-05
+
+ Average absolute percentage error in within-sample forecasts:
+  Last year:   6.95      Last-1 year:   6.04     Last-2 year:  11.30
+  Last three years:    8.10
+
+
+ ARIMA Model:  (0 1 1)(0 1 1)12
+   Nonseasonal differences: 1
+   Seasonal differences:    1
+                                              Standard
+ Parameter                    Estimate          Errors
+ -----------------------------------------------------
+ Nonseasonal MA                                    
+   Lag  1                       0.5467         0.04886
+
+ Seasonal MA                                       
+   Lag 12                       0.7099         0.04185
+
+ Variance                       0.12306E+01
+ SE of Var                      0.10273E+00
+ -----------------------------------------------------
+                 -1.0 -0.8 -0.6 -0.4 -0.2  0.0  0.2  0.4  0.6  0.8  1.0
+                   +----+----+----+----+----+----+----+----+----+----+
+            1                            .  |X .                       0.036
+            2                            . X|  .                      -0.033
+            3                            .XX|  .                      -0.088
+            4                            .  |  .                       0.001
+            5                            . X|  .                      -0.047
+            6                            .  |X .                       0.038
+            7                            .XX|  .                      -0.089
+            8                            .XX|  .                      -0.083
+            9                            .XX|  .                      -0.084
+           10                            .  |X .                       0.050
+           11                            .  |X .                       0.035
+           12       - - - - - - - - - -  .  |  .  - - - - - - - - -   -0.002
+           13                            .  |XX.                       0.067
+           14                            .  |  .                       0.009
+           15                            .  |  .                      -0.010
+           16                            .  |X .                       0.020
+           17                            .  |  .                      -0.019
+           18                            . X|  .                      -0.049
+           19                            .  |X .                       0.020
+           20                            .  |XX.                       0.098
+           21                            .  |XX.                       0.077
+           22                            .  |  .                       0.005
+           23                            .  |  .                      -0.012
+           24       - - - - - - - - - -  .  |  .  - - - - - - - - -   -0.016
+  
+                 -1.0 -0.8 -0.6 -0.4 -0.2  0.0  0.2  0.4  0.6  0.8  1.0
+                   +----+----+----+----+----+----+----+----+----+----+
+            1                            .  |X .                       0.043
+            2                            .  |XX.                       0.099
+            3                            . X|  .                      -0.044
+            4                            .  |XX.                       0.066
+            5                            .XX|  .                      -0.069
+            6                            .  |  .                       0.002
+            7                            . X|  .                      -0.023
+            8                            . X|  .                      -0.039
+            9                            .  |  .                       0.005
+           10                            . X|  .                      -0.046
+           11                            .  |  .                      -0.014
+           12       - - - - - - - - - -  XXX|  .  - - - - - - - - -   -0.107
+           13                            .  |  .                      -0.006
+           14                            .XX|  .                      -0.071
+           15                            .  |XX.                       0.096
+           16                            . X|  .                      -0.032
+           17                            .  |  .                       0.014
+           18                            .  |X .                       0.025
+           19                            .  |X .                       0.034
+           20                            . X|  .                      -0.023
+           21                            . X|  .                      -0.046
+           22                            .XX|  .                      -0.065
+           23                            .  |  .                      -0.009
+           24       - - - - - - - - - -  .  |  .  - - - - - - - - -   -0.009
+  
+  Standard
+  Deviations     Frequency
+       -3 +#
+          |####
+       -2 +#####
+          |#############
+       -1 +##############################
+          |################################################
+        0 +##################################################################
+          |##############################################
+        1 +####################################
+          |#######################
+        2 +########
+          |###
+        3 +##
+
+  Outlier [##
+
+  One '#'= 1 observation[s]
+
+  Residuals with |t|>3.25
+
+  Obs       t-value
+  -----------------
+  1987.May     3.31
+  1993.Aug     3.95
+
+ Summary Statistics for the Unstandardized Residuals
+  Minimum                    -3.532
+  Maximum                     3.978
+  Median                     -0.162
+  Robust Std Dev              1.049
+
+    Number of residuals  :    287
+
+    Skewness coefficient :    0.1922    
+    Geary's a            :    0.7737    
+    Kurtosis             :    3.8239   (significant at one percent level)
+
+  A significant value of one of these statistics indicates that the
+  standardized residuals do not follow a standard normal distribution.
+  If the regARIMA model fits the data well, such lack of normality
+  ordinarily causes no problems.
+
+  However, a significant value can occur because certain data effects are
+  not captured well by the model. Sometimes these effects can be captured
+  by additional or different regressors (e.g. trading day, holiday or 
+  outlier regressors).
+
+  There are other important effects that can cause a significant value,
+  such as random variation of the coefficients or time-varying conditional
+  variances, which cannot be represented by regARIMA models. These other
+  effects cause the t-tests, AIC's and forecast coverage intervals of
+  X-13A-S to have reduced reliability. Their presence is often
+  indicated by significant (high) values of the Ljung-Box Q-statistics of
+  the squared residuals.
+
+  Forecasts and Standard Errors
+   ------------------------------
+                         Standard
+       Date   Forecast      Error
+   ------------------------------
+   2001.Jan     -20.51      1.109
+   2001.Feb     -17.40      1.218
+   2001.Mar     -15.92      1.318
+   2001.Apr     -18.68      1.410
+   2001.May     -15.62      1.497
+   2001.Jun     -16.95      1.580
+   2001.Jul     -16.31      1.658
+   2001.Aug     -18.54      1.732
+   2001.Sep     -17.90      1.804
+   2001.Oct     -19.93      1.873
+   2001.Nov     -22.78      1.939
+   2001.Dec     -26.13      2.003
+   2002.Jan     -22.02      2.166
+   2002.Feb     -18.92      2.261
+   2002.Mar     -17.44      2.353
+   2002.Apr     -20.19      2.440
+   2002.May     -17.14      2.525
+   2002.Jun     -18.46      2.607
+   2002.Jul     -17.83      2.687
+   2002.Aug     -20.06      2.764
+   2002.Sep     -19.42      2.839
+   2002.Oct     -21.44      2.912
+   2002.Nov     -24.29      2.984
+   2002.Dec     -27.64      3.053
+   ------------------------------
+
+  Confidence intervals with coverage probability (0.95000)
+   ---------------------------------------
+       Date      Lower  Forecast     Upper
+   ---------------------------------------
+   2001.Jan     -22.68    -20.51    -18.34
+   2001.Feb     -19.79    -17.40    -15.02
+   2001.Mar     -18.51    -15.92    -13.34
+   2001.Apr     -21.44    -18.68    -15.92
+   2001.May     -18.56    -15.62    -12.69
+   2001.Jun     -20.05    -16.95    -13.85
+   2001.Jul     -19.56    -16.31    -13.07
+   2001.Aug     -21.94    -18.54    -15.15
+   2001.Sep     -21.44    -17.90    -14.37
+   2001.Oct     -23.60    -19.93    -16.26
+   2001.Nov     -26.58    -22.78    -18.98
+   2001.Dec     -30.06    -26.13    -22.20
+   2002.Jan     -26.27    -22.02    -17.78
+   2002.Feb     -23.35    -18.92    -14.49
+   2002.Mar     -22.05    -17.44    -12.82
+   2002.Apr     -24.98    -20.19    -15.41
+   2002.May     -22.09    -17.14    -12.19
+   2002.Jun     -23.57    -18.46    -13.35
+   2002.Jul     -23.09    -17.83    -12.56
+   2002.Aug     -25.47    -20.06    -14.64
+   2002.Sep     -24.98    -19.42    -13.85
+   2002.Oct     -27.15    -21.44    -15.73
+   2002.Nov     -30.14    -24.29    -18.45
+   2002.Dec     -33.63    -27.64    -21.66
+   ---------------------------------------
+
+                      ARIMA model-based signal extraction
+
+     This is a new version, produced by G. Caporello and A. Maravall at the
+     Bank of Spain, of the SEATS ("Signal Extraction in ARIMA Time Series")
+      application originally developed by V. Gómez and A. Maravall (1996).
+
+ PART 1 : ARIMA ESTIMATION
+ -------------------------
+
+
+
+
+ SERIES TITLE:                                                                                 
+ PREADJUSTED WITH regARIMA :  YES                                                                             
+ METHOD: MAXIMUM LIKELIHOOD
+
+ NO OF OBSERVATIONS =300
+
+
+
+
+ ORIGINAL UNCORRECTED SERIES (from regARIMA)
+
+ PREADJUSTMENT COMPONENT
+ Outliers and Other Deterministic Effects
+
+ (from regARIMA)
+
+
+ ARIMA SERIES
+ (Corrected by regARIMA)
+ "Original Series" FOR S2001
+
+  INPUT PARAMETERS
+  ----------------
+
+  LAM= 1        IMEAN= 0        RSA= 0        MQ=12
+  P= 0          BP= 0           Q= 1          BQ= 1
+  D= 1          BD= 1           NOADMISS= 1   RMOD=   0.500
+  M=36          QMAX=50         BIAS= 1       SMTR= 0
+  THTR= -0.400  MAXBIAS=  0.500 IQM= 24       OUT=  1
+  EPSPHI= 2.000 MAXIT= 20       XL=  0.990    SEK=  3.000
+
+ TRANSFORMATION: Z -> Z
+
+ NONSEASONAL DIFFERENCING     D= 1
+    SEASONAL DIFFERENCING    BD= 1
+
+
+ DIFFERENCED SERIES
+
+ MEAN OF DIFFERENCED SERIES  -0.9834D-02
+
+ MEAN SET EQUAL TO ZERO
+
+
+  VARIANCE OF Z SERIES =     0.5319D+02
+
+ VARIANCE OF DIFFERENCED SERIES =     0.2363D+01
+
+
+
+ PARTIAL AUTOCORRELATIONS
+ ------------------------
+
+     -0.3981  -0.2391  -0.1871  -0.0665  -0.0568   0.0680   0.0350  -0.0604  -0.1415  -0.0410   0.2426  -0.4068
+ SE   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590
+
+     -0.0504  -0.0513  -0.0490   0.0481  -0.0032   0.0088  -0.0008   0.0070  -0.0007  -0.0019   0.1833  -0.0931
+ SE   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590
+
+     -0.1497  -0.0577  -0.0657  -0.0469   0.0042  -0.0753  -0.0044  -0.0033   0.0662   0.1025   0.0931  -0.1185
+ SE   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590
+
+
+
+
+
+ MODEL FITTED
+
+      NONSEASONAL     P= 0     D= 1     Q= 1
+         SEASONAL    BP= 0    BD= 1    BQ= 1
+      PERIODICITY    MQ= 12
+
+          MEAN     =     0.00000    
+
+          SE       = *******
+
+
+
+
+                 ARIMA PARAMETERS 
+
+           TH    =   -0.5467
+           SE    =    *****
+           BTH   =   -0.7099
+           SE    =    *****
+
+ 
+
+ EXTENDED RESIDUALS
+
+ STUDENTIZED EXTENDED RESIDUAL OF -3.1725  AT T= 93    ( 9 1983)
+
+ STUDENTIZED EXTENDED RESIDUAL OF  3.5737  AT T=225    ( 9 1994)
+
+
+
+  TEST-STATISTICS ON EXTENDED RESIDUALS
+  -------------------------------------
+
+
+           MEAN= -0.3238D-01
+        ST.DEV.=  0.6262D-01
+        OF MEAN
+        T-VALUE= -0.5172
+
+ NORMALITY TEST=     9.878        ( CHI-SQUARED(2) )
+       SKEWNESS=  0.1689          ( SE =  0.1414 )
+       KURTOSIS=  3.8223          ( SE =  0.2828 )
+
+ SUM OF SQUARES=  0.3532D+03
+
+  DURBIN-WATSON=  1.9080
+
+ STANDARD DEVI.=  0.1113D+01
+ OF RESID.
+       VARIANCE=  0.1239D+01
+       OF RESID.
+
+
+  FRIEDMAN-KENDALL-ORD NONPARAMETRIC TEST OVER EXTENDED RESIDUALS IS     10.90
+  AND IT SHOULD BEHAVE AS A CHI-SQUARED(11), IF THERE IS NOT SEASONAL BEHAVIOR.
+
+
+ TRANSFORMATION: Z -> Z
+
+ NONSEASONAL DIFFERENCING     D= 1
+    SEASONAL DIFFERENCING    BD= 1
+
+
+ DIFFERENCED SERIES
+
+ MEAN OF DIFFERENCED SERIES  -0.9834D-02
+
+ MEAN SET EQUAL TO ZERO
+
+
+  VARIANCE OF Z SERIES =     0.5319D+02
+
+ VARIANCE OF DIFFERENCED SERIES =     0.2363D+01
+
+
+
+ PARTIAL AUTOCORRELATIONS
+ ------------------------
+
+     -0.3981  -0.2391  -0.1871  -0.0665  -0.0568   0.0680   0.0350  -0.0604  -0.1415  -0.0410   0.2426  -0.4068
+ SE   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590
+
+     -0.0504  -0.0513  -0.0490   0.0481  -0.0032   0.0088  -0.0008   0.0070  -0.0007  -0.0019   0.1833  -0.0931
+ SE   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590
+
+     -0.1497  -0.0577  -0.0657  -0.0469   0.0042  -0.0753  -0.0044  -0.0033   0.0662   0.1025   0.0931  -0.1185
+ SE   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590   0.0590
+
+
+
+
+
+ MODEL FITTED
+
+      NONSEASONAL     P= 0     D= 1     Q= 1
+         SEASONAL    BP= 0    BD= 1    BQ= 1
+      PERIODICITY    MQ= 12
+
+          MEAN     =     0.00000    
+
+          SE       = *******
+
+
+
+
+                 ARIMA PARAMETERS 
+
+           TH    =   -0.5467
+           SE    =    *****
+           BTH   =   -0.7099
+           SE    =    *****
+
+ 
+
+ EXTENDED RESIDUALS
+
+ STUDENTIZED EXTENDED RESIDUAL OF -3.1725  AT T= 93    ( 9 1983)
+
+ STUDENTIZED EXTENDED RESIDUAL OF  3.5737  AT T=225    ( 9 1994)
+
+
+
+  TEST-STATISTICS ON EXTENDED RESIDUALS
+  -------------------------------------
+
+
+           MEAN= -0.3238D-01
+        ST.DEV.=  0.6262D-01
+        OF MEAN
+        T-VALUE= -0.5172
+
+ NORMALITY TEST=     9.878        ( CHI-SQUARED(2) )
+       SKEWNESS=  0.1689          ( SE =  0.1414 )
+       KURTOSIS=  3.8223          ( SE =  0.2828 )
+
+ SUM OF SQUARES=  0.3532D+03
+
+  DURBIN-WATSON=  1.9080
+
+ STANDARD DEVI.=  0.1113D+01
+ OF RESID.
+       VARIANCE=  0.1239D+01
+       OF RESID.
+
+
+  FRIEDMAN-KENDALL-ORD NONPARAMETRIC TEST OVER EXTENDED RESIDUALS IS     10.90
+  AND IT SHOULD BEHAVE AS A CHI-SQUARED(11), IF THERE IS NOT SEASONAL BEHAVIOR.
+
+
+ BACKWARD RESIDUALS
+
+ PART 2 : DERIVATION OF THE MODELS FOR THE COMPONENTS AND ESTIMATORS
+ -------------------------------------------------------------------
+
+
+
+ SERIES TITLE:                                                                                 
+
+ MODEL PARAMETERS
+ (0,1,1)(0,1,1)
+
+ PARAMETER VALUES : COEFFIC. OF POLYNOMIALS IN B OF THE MODEL (TRUE SIGNS)
+
+ THETA PARAMETERS
+  1.00  -0.55
+
+ BTHETA PARAMETERS
+  1.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00  -0.71
+
+ PHI PARAMETERS
+  1.00
+
+ BPHI PARAMETERS
+  1.00
+
+ NUMERATOR OF THE MODEL (TOTAL MOVING AVERAGE POLYNOMIAL)
+ --------------------------------------------------------
+  1.0000 -0.5467  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+ -0.7099  0.3881
+
+
+
+ FACTORIZATION OF THE TOTAL AUTOREGRESSIVE POLYNOMIAL
+ -----------------------------------------------------
+
+
+ STATIONARY AUTOREGRESSIVE TREND-CYCLE
+  1.0000
+
+ NON-STATIONARY AUTOREGRESSIVE TREND-CYCLE
+  1.0000 -2.0000  1.0000
+
+ AUTOREGRESSIVE TREND-CYCLE
+ --------------------------
+  1.0000 -2.0000  1.0000
+
+ STATIONARY AUTOREGRESSIVE TRANSITORY COMP.
+  1.0000
+
+ NON-STATIONARY AUTOREGRESSIVE TRANSITORY COMP.
+  1.0000
+
+ AUTOREGRESSIVE TRANSITORY COMP.
+ ------------------------------
+  1.0000
+
+ STATIONARY AUTOREGRESSIVE SEASONAL COMPONENT
+  1.0000
+
+ NON-STATIONARY AUTOREGRESSIVE SEASONAL COMPONENT
+  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000
+
+ AUTOREGRESSIVE SEASONAL COMPONENT
+ ---------------------------------
+  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000  1.0000
+
+ STATIONARY AUTOREGRESSIVE SEASONALLY ADJUSTED COMPONENT
+  1.0000
+
+ NON-STATIONARY AUTOREGRESSIVE SEASONALLY ADJUSTED COMPONENT
+  1.0000 -2.0000  1.0000
+
+ AUTOREGRESSIVE SEASONALLY ADJUSTED COMPONENT
+ --------------------------------------------
+  1.0000 -2.0000  1.0000
+
+ TOTAL DENOMINATOR (TOTAL AUTOREGRESSIVE POLYOMIAL)
+ --------------------------------------------------
+  1.0000 -1.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+ -1.0000  1.0000
+
+
+
+FACTORIZATION OF THE MA POLYN. FOR THE COMPONENTS
+-------------------------------------------------
+
+
+     MA ROOTS OF TREND-CYCLE
+     -----------------------
+
+     TOTAL SQUARED ERROR=  0.2592269D-32
+
+
+     MA ROOTS OF SEAS.
+     -----------------
+
+     TOTAL SQUARED ERROR=  0.3891318D-25
+
+
+     MA ROOTS OF SEASONALLY ADJUSTED SERIES
+     --------------------------------------
+
+     TOTAL SQUARED ERROR=  0.1232595D-31
+
+
+     MA ROOTS OF TREND ADJUSTED SERIES
+     --------------------------------------
+
+     TOTAL SQUARED ERROR=  0.4933954D-22
+
+
+
+
+                     MODELS FOR THE COMPONENTS
+                     -------------------------
+
+
+
+
+
+
+ TREND-CYCLE NUMERATOR (MOVING AVERAGE POL.)
+    1.00000    0.02812   -0.97188
+ TREND-CYCLE DENOMINATOR (AUTOREGRESSIVE POL.)
+    1.00000   -2.00000    1.00000
+ INNOV. VAR. (*)    0.037986
+
+
+
+ SEAS. NUMERATOR (MOVING AVERAGE POL.)
+    1.00000    1.18534    1.09500    0.91519    0.66725    0.41253    0.17171   -0.03967   -0.19911   -0.33369   -0.41163   -0.61387
+ SEAS. DENOMINATOR (AUTOREGRESSIVE POL.)
+    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+ INNOV. VAR. (*)    0.019792
+
+
+
+ IRREGULAR
+ VAR.     0.43713
+
+
+
+ SEASONALLY ADJUSTED NUMERATOR (MOVING AVERAGE POL.)
+    1.00000   -1.52189    0.53455
+
+ SEASONALLY ADJUSTED DENOMINATOR (AUTOREGRESSIVE POL.)
+    1.00000   -2.00000    1.00000
+ INNOV. VAR. (*)    0.748688
+
+  (*)   IN UNITS OF VAR(A)
